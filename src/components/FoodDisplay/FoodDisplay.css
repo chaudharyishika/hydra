@@ -1,40 +1,87 @@
-.food-display{
-    margin-top: 30px;
+.food-display {
+    margin-top: 30px auto;
+    padding: 0 15px; 
+    margin-bottom: 50px;
 }
-.food-display h2{
-    font-size: max(2vw,24px);
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
     font-weight: 600;
+    
 }
-.food-display-list{
+
+.food-display-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
     margin-top: 30px;
     gap: 30px;
     row-gap: 50px;
     text-align: center;
-    margin-top: 50px;
-    
 }
-.food-display-list img{
-    width: 60%;
-    height: 60%;
+.food-display-list div { /* Apply flexbox to each item */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: space-between; /* Space between items */
+    height: 100%; /* Ensure all items take the same height */
+}
+.food-display-list img {
+    width: 80%; 
+    height: auto; 
     border-radius: 50%;
     border: 5px solid #262626;
 }
 
-.into{
+.into {
+    
     columns: 2;
 }
-.into h1{
+
+.into h1 {
     color: #262626;
     font-weight: 500;
 }
-.food-display-list button{
+
+.food-display-list button {
     margin-top: 10px;
     border-radius: 10px;
-    padding: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+
+
+@media (max-width: 768px) { 
+    .food-display {
+        padding: 0 10px;
+    }
+
+    .food-display h2 {
+        font-size: 6vw; 
+    }
+
+    .food-display-list {
+        grid-template-columns: 1fr; 
+    }
+
+    .food-display-list img {
+        width: 90%; 
+    }
+
+    .food-display-list button {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) { 
+    .food-display h2 {
+        font-size: 8vw;
+    }
+
+    .food-display-list {
+        gap: 20px; 
+    }
+
+    .food-display-list button {
+        padding: 12px; 
+    }
 }

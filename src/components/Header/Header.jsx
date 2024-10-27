@@ -4,7 +4,7 @@ function Header(){
     return(
         <div className='header'>
             <div className='header-contents'>
-                <h2>Dive Into The Depths Of Virtual Reality</h2>
+                <h2>Dive Into The Depths Virtual Reality</h2>
                 <p>Lorem ipsum dolor sit amet, consector adiprising rlit,wed do eiusmed tempot incidentt ut labore et dolre. </p>
                 <button>BUILD YOUR WORLD </button>
                <div className='column'> 
