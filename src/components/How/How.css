@@ -1,0 +1,14 @@
+h1{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h2{
+   color: #262626;
+   font-weight: 100;
+   font-size: large;
+   margin-bottom: 30px;
+}
+.how{
+    columns: 2;
+}
