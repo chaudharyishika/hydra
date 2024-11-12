@@ -18,12 +18,12 @@
     row-gap: 50px;
     text-align: center;
 }
-.food-display-list div { /* Apply flexbox to each item */
+.food-display-list div { 
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center content horizontally */
-    justify-content: space-between; /* Space between items */
-    height: 100%; /* Ensure all items take the same height */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    height: 100%; 
 }
 .food-display-list img {
     width: 80%; 
